@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Montréal Photo Club 📷`,
-    name: `MontrealPhotoClub`,
-    siteUrl: `https://montrealphoto.club`,
-    description: `A friendly gathering of photographers in Montréal from all horizons and skills.`,
+    title: `永范的乌托邦是个理想国`,
+    name: `youngbeom`,
+    siteUrl: `https://shenyongfan.com`,
+    description: `用来记录有趣的事情`,
     hero: {
-      heading: `We're a friendly gathering of photographers and we're hosting regular events in Montréal.`,
+      heading: `你好,欢迎来到永范的博客！这里存放着所有关于我爱着的这个世界`,
       dontmiss: `Make sure you don't miss out our future events.`,
       join: `Join now for free 👇`,
       maxWidth: 1080,
@@ -13,19 +13,19 @@ module.exports = {
     social: [
       {
         name: `twitter`,
-        url: `https://twitter.com/mtlphotoclub`,
+        url: `https://twitter.com/ShinYoungboom`,
       },
       {
         name: `instagram`,
-        url: `https://instagram.com/montrealphotoclub`,
+        url: `https://www.instagram.com/youngbeom_shin`,
       },
       {
         name: `facebook`,
-        url: `https://facebook.com/montrealphotoclub`,
+        url: `https://facebook.com/youngbeomshen`,
       },
       {
         name: `github`,
-        url: `https://github.com/montrealphotoclub`,
+        url: `https://github.com/youngbeom-shin`,
       },
     ],
   },
@@ -74,16 +74,16 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: `https://montrealphoto.club`,
-        sitemap:`https://montrealphoto.club/sitemap.xml`,
+        host: `https://www.shenyongfan.com`,
+        sitemap:`https://www.shenyongfan.com/sitemap.xml`,
         policy: [{ userAgent: '*' }],
       },
     },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: `https://montrealphoto.club`,
-        sitemap:`https://montrealphoto.club/sitemap.xml`,
+        host: `https://www.shenyongfan.com`,
+        sitemap:`https://www.shenyongfan.com/sitemap.xml`,
         policy: [{ userAgent: '*' }],
       },
     },
