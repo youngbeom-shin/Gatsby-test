@@ -12,20 +12,19 @@ module.exports = {
     },
     social: [
       {
-        name: `twitter`,
+        url: `https://www.weibo.com/youngbeom`,
+      },
+      {
         url: `https://twitter.com/ShinYoungboom`,
       },
       {
-        name: `instagram`,
         url: `https://www.instagram.com/youngbeom_shin`,
       },
       {
-        name: `facebook`,
-        url: `https://facebook.com/youngbeomshen`,
+        url: `https://github.com/youngbeom-shin`,
       },
       {
-        name: `github`,
-        url: `https://github.com/youngbeom-shin`,
+        url: `https://facebook.com/youngbeomshen`,
       },
     ],
   },

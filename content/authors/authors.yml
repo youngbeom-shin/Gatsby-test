@@ -1,3 +1,14 @@
+- name: youngbeom
+  bio: |
+    After hosting multiple events with Unsplash and the Metro Photo Challenge, I decided to make this a more formal club. So that we can keep having fun, learning from each other, and meeting other fine folks.
+  avatar: ./avatars/youngbeom.jpg
+  featured: true
+  social:
+    - url: https://unsplash.com/jpvalery
+    - url: https://twitter.com/jpvalery
+    - url: https://instagram.com/jpvalery
+    - url: https://github.com/jpvalery
+    - url: https://linkedin.com/in/jpvalery
 - name: Jp Valery
   bio: |
     After hosting multiple events with Unsplash and the Metro Photo Challenge, I decided to make this a more formal club. So that we can keep having fun, learning from each other, and meeting other fine folks.
