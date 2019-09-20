@@ -12,9 +12,6 @@ module.exports = {
     },
     social: [
       {
-        url: `https://www.weibo.com/youngbeom`,
-      },
-      {
         url: `https://twitter.com/ShinYoungboom`,
       },
       {
