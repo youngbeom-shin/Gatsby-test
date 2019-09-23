@@ -7,7 +7,7 @@ import Section from "@components/Section";
 import Logo from "@components/Logo";
 
 import Icons from "@icons";
-import homepageIcon from "./language/homepageIcon";
+import FrenchIcon from "./language/FrenchIcon";
 import EnglishIcon from "./language/EnglishIcon";
 import mediaqueries from "@styles/media";
 import {
@@ -67,7 +67,7 @@ function NavigationHeader() {
             </button>
           ) : (
             <>
-              <SwitchLanguage href="https://www.youngbeom.com" rel="youngbeom的个站" title="En français?"><homepageIcon fill={fill} /></SwitchLanguage>
+              <SwitchLanguage href="https://fr.montrealphoto.club" rel="noopener noreferrer" title="En français?"><FrenchIcon fill={fill} /></SwitchLanguage>
               <SharePageButton />
               <DarkModeToggle />
             </>

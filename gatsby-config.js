@@ -1,30 +1,31 @@
 module.exports = {
   siteMetadata: {
-    title: `永范的乌托邦是个理想国`,
-    name: `youngbeom`,
-    siteUrl: `https://shenyongfan.com`,
-    description: `用来记录有趣的事情`,
+    title: `Montréal Photo Club 📷`,
+    name: `MontrealPhotoClub`,
+    siteUrl: `https://montrealphoto.club`,
+    description: `A friendly gathering of photographers in Montréal from all horizons and skills.`,
     hero: {
-      heading: `你好,欢迎来到永范的博客！这里存放着所有关于我爱着的这个世界`,
-      dontmiss: ``,
-      join: ``,
+      heading: `We're a friendly gathering of photographers and we're hosting regular events in Montréal.`,
+      dontmiss: `Make sure you don't miss out our future events.`,
+      join: `Join now for free 👇`,
       maxWidth: 1080,
     },
     social: [
       {
-        url: `https://twitter.com/ShinYoungboom`,
+        name: `twitter`,
+        url: `https://twitter.com/mtlphotoclub`,
       },
       {
-        url: `https://www.instagram.com/youngbeom_shin`,
+        name: `instagram`,
+        url: `https://instagram.com/montrealphotoclub`,
       },
       {
-        url: `https://github.com/youngbeom-shin`,
+        name: `facebook`,
+        url: `https://facebook.com/montrealphotoclub`,
       },
       {
-        url: `https://facebook.com/youngbeomshen`,
-      },
-      {
-        url: `https://www.weibo.com/youngbeom`,
+        name: `github`,
+        url: `https://github.com/montrealphotoclub`,
       },
     ],
   },
@@ -36,7 +37,7 @@ module.exports = {
         contentAuthors: "content/authors",
         basePath: "/",
         authorsPage: true,
-        mailchimp: false,
+        mailchimp: true,
         sources: {
           local: true,
           // contentful: true,
@@ -65,7 +66,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-mailchimp",
       options: {
-        endpoint: "", // add your MC list endpoint here; see plugin repo for instructions
+        endpoint: "https://club.us12.list-manage.com/subscribe/post?u=82813799388b14db2174b8591&amp;id=428156c588", // add your MC list endpoint here; see plugin repo for instructions
       },
     },
     'gatsby-plugin-netlify',
@@ -73,16 +74,16 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: `https://www.shenyongfan.com`,
-        sitemap:`https://www.shenyongfan.com/sitemap.xml`,
+        host: `https://montrealphoto.club`,
+        sitemap:`https://montrealphoto.club/sitemap.xml`,
         policy: [{ userAgent: '*' }],
       },
     },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: `https://www.shenyongfan.com`,
-        sitemap:`https://www.shenyongfan.com/sitemap.xml`,
+        host: `https://montrealphoto.club`,
+        sitemap:`https://montrealphoto.club/sitemap.xml`,
         policy: [{ userAgent: '*' }],
       },
     },
