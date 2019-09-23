@@ -62,6 +62,11 @@ module.exports = {
         icon: `src/assets/favicon.png`,
       },
     },
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint: "", // add your MC list endpoint here; see plugin repo for instructions
+      },
     },
     'gatsby-plugin-netlify',
     'gatsby-plugin-advanced-sitemap',
