@@ -6,8 +6,8 @@ module.exports = {
     description: `用来记录有趣的事情`,
     hero: {
       heading: `你好,欢迎来到永范的博客！这里存放着所有关于我爱着的这个世界`,
-      dontmiss: `Make sure you don't miss out our future events.`,
-      join: `Join now for free 👇`,
+      dontmiss: ``,
+      join: ``,
       maxWidth: 1080,
     },
     social: [
@@ -36,7 +36,7 @@ module.exports = {
         contentAuthors: "content/authors",
         basePath: "/",
         authorsPage: true,
-        mailchimp: true,
+        mailchimp: false,
         sources: {
           local: true,
           // contentful: true,
@@ -62,11 +62,6 @@ module.exports = {
         icon: `src/assets/favicon.png`,
       },
     },
-    {
-      resolve: "gatsby-plugin-mailchimp",
-      options: {
-        endpoint: "https://club.us12.list-manage.com/subscribe/post?u=82813799388b14db2174b8591&amp;id=428156c588", // add your MC list endpoint here; see plugin repo for instructions
-      },
     },
     'gatsby-plugin-netlify',
     'gatsby-plugin-advanced-sitemap',
