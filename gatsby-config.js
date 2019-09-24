@@ -23,6 +23,9 @@ module.exports = {
       {
         url: `https://facebook.com/youngbeomshen`,
       },
+      {
+        url: `https://weibo.com/youngbeom`,
+      },
     ],
   },
   plugins: [
