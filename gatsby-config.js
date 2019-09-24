@@ -24,7 +24,7 @@ module.exports = {
         url: `https://facebook.com/youngbeomshen`,
       },
       {
-        url: `https://www.weibo.com/youngbeom`,
+        url: `https://www.weibo.com`,
       },
     ],
   },
