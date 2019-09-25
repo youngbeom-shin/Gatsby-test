@@ -33,10 +33,10 @@ module.exports = {
         contentAuthors: "content/authors",
         basePath: "/",
         authorsPage: true,
-        mailchimp: true,
+        mailchimp: false,
         sources: {
           local: true,
-          // contentful: true,
+          // contentful: false,
         },
       },
     },

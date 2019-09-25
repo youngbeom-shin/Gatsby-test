@@ -35,7 +35,7 @@ function Footer() {
         <HoritzontalRule />
         <FooterContainer>
           <FooterText>
-            © {new Date().getFullYear()} {name} | <StyledLink to="/about">关于我</StyledLink> 
+            © {new Date().getFullYear()} {name} | <StyledLink to="/about">about</StyledLink> 
           </FooterText>
           <div>
             <SocialLinks links={social} />
