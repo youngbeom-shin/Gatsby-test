@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `永范的乌托邦是个理想国`,
+    title: `youngbeom`,
     name: `youngbeom`,
     siteUrl: `https://shenyongfan.com`,
     description: `用来记录有趣的事情`,
     hero: {
-      heading: `你好,欢迎来到永范的博客！这里存放着所有关于我爱着的这个世界`,
+      heading: `好久不见! 欢迎来到我的博客`,
       dontmiss: ``,
       join: ``,
       maxWidth: 1080,

@@ -63,7 +63,7 @@ const Subscription: React.FunctionComponent<{}> = () => {
               subscribed={subscribed}
               disabled={subscribed}
             >
-              {subscribed ? <CheckMarkIcon /> : "Join now for free"}
+              {subscribed ? <CheckMarkIcon /> : "加入邮件组"}
             </Button>
             {error && <Error dangerouslySetInnerHTML={{ __html: error }} />}
           </Form>
