@@ -5,7 +5,7 @@ module.exports = {
     siteUrl: `https://shenyongfan.com`,
     description: `用来记录有趣的事情`,
     hero: {
-      heading: `好久不见! 欢迎来到我的博客`,
+      heading: `好久不见! 欢迎来到youngbeom的博客`,
       dontmiss: ``,
       join: ``,
       maxWidth: 1080,
@@ -50,8 +50,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `shenyongfan.com`,
-        short_name: `shenyongfan.com`,
+        name: `youngbeom的博客`,
+        short_name: `youngbeom的博客`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,
@@ -62,7 +62,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-mailchimp",
       options: {
-        endpoint: "https://club.us12.list-manage.com/subscribe/post?u=82813799388b14db2174b8591&amp;id=428156c588", // add your MC list endpoint here; see plugin repo for instructions
+        endpoint: "", // add your MC list endpoint here; see plugin repo for instructions
       },
     },
     'gatsby-plugin-netlify',
@@ -73,6 +73,32 @@ module.exports = {
         host: `https://shenyongfan.com`,
         sitemap:`https://shenyongfan.com/sitemap.xml`,
         policy: [{ userAgent: '*' }],
+      },
+      {
+        resolve: `gatsby-plugin-google-analytics`,
+        options: {
+          trackingId: "G-ZJB1QDW1MZ",
+          // Defines where to place the tracking script - `true` in the head and `false` in the body
+          head: false,
+          // Setting this parameter is optional
+          anonymize: true,
+          // Setting this parameter is also optional
+          respectDNT: true,
+          // Avoids sending pageview hits from custom paths
+          exclude: ["/preview/**", "/do-not-track/me/too/"],
+          // Delays sending pageview hits on route update (in milliseconds)
+          pageTransitionDelay: 0,
+          // Enables Google Optimize using your container Id
+          optimizeId: "G-ZJB1QDW1MZ",
+          // Enables Google Optimize Experiment ID
+          experimentId: "G-ZJB1QDW1MZ",
+          // Set Variation ID. 0 for original 1,2,3....
+          variationId: "G-ZJB1QDW1MZ",
+          // Any additional optional fields
+          sampleRate: 5,
+          siteSpeedSampleRate: 10,
+          cookieDomain: "example.com",
+        },
       },
     },
   ],

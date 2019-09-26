@@ -94,7 +94,7 @@ app显示的数据除了从服务器获取之外，还有一个数据来源就�
 ![](./images/9-progressive_export.png) 
 
 或者存储为web所用格式：
-![](http://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2018/12/10-porgressive_export_web.png) 
+![](https://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2018/12/10-porgressive_export_web.png) 
 除了以上设计师可以采用的方式以外，工程师也可以用编程语言来进行图片处理，比如C#、python都能对图片进行加工。（知识点啊同学们，学不完的知识点…）
 
 1.3 交错式PNG  
@@ -102,31 +102,31 @@ app显示的数据除了从服务器获取之外，还有一个数据来源就�
 PNG的优点是支持透明背景以及消除锯齿边缘的功能，且可以在不失真的情况下压缩图片。相信PNG在未来网页设计中将是普遍使用的标准图片格式。
 
 1.4 如何将图片设定为交错式PNG  
-![](http://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2018/12/11-Interlaced_export.png)  
+![](https://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2018/12/11-Interlaced_export.png)  
 2. 标准型（Baseline JPEG）  
-![](http://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2018/12/12-standard.gif)  
+![](https://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2018/12/12-standard.gif)  
 标准型图片现在已经不太多见了，很少会看到一张图片会是像打印机一样一点点从上到下加载出来的，这种加载方式需要浏览器一格一格的“刷”出来，缺点是在加载完成后才能确定图片的真实高度，感觉不是很好。
 
 生成标准型的图片  
 PS默认保存的类型就是标准型：  
-![](http://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2018/12/13-standard_export.png)  
+![](https://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2018/12/13-standard_export.png)  
 为了更好的用户体验还是建议大家在导出图片时将图片设置成渐进式，但针对瀑布流的图片加载建议还是采用标准式的加载方式(同Pinterest)。
 
 ### 页面加载的几种方式  
 * 异步加载  
-![](http://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2018/12/14-Asynchronous_loading.PNG)   
+![](https://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2018/12/14-Asynchronous_loading.PNG)   
 优先加载占用网络资源较小的元素，比如优先加载文字，之后再加载图片，图片加载之前可以先加载占位图，这种做法的好处就是可以完成渐进式的加载，降低用户的焦虑感。  
 
 建议使用的页面类型：详情页等布局相对固定，加载前后对页面布局不会产生较大跳动的页面。
 
 * 懒加载(延迟加载)  
-![](http://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2018/12/15-lazzy_loading.jpg) 
+![](https://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2018/12/15-lazzy_loading.jpg) 
 懒加载这个名词不是经常听，但是是我们最经常使用的一种加载形式之一。图片流都是这种加载方式，比如我们在淘宝浏览到一定位置时再继续请求下一批次的商品，这种方式的就是只加载一定个数的数据，当图片滚动到视窗内的时候，才会再去加载。  
 
 建议使用的页面类型：需要加载资源较大的列表页等。形式参考Pinterest。
 
 * 预加载  
-![](http://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2018/12/16-Splash%20screen.PNG)
+![](https://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2018/12/16-Splash%20screen.PNG)
 预加载的方式就是提前加载，当用户在流程相对集中且必要时加载下一个页面的数据，这样当用户完成上一页面的操作进入下一页面时就能看到加载完成的页面，但是这种方式具有一定的局限性，对于非连续性的页面跳转或者在用户尚未最终确认本页面操作前无法判断下一页面的情况时就不能采用预加载的方式。预加载的方式可以有效的提升产品的使用流畅度。  
 建议使用的页面类型：闪屏幻灯，列表页等。  
 
@@ -142,13 +142,13 @@ PS默认保存的类型就是标准型：
 ### 建议缓存页面  
 体验了一下在无网状态下进入人人贷App，我看到的页面是这样的：  
 人人贷主要界面：
-![](http://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2018/12/17-renrendai.png)
+![](https://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2018/12/17-renrendai.png)
 
 汽车之家主要页面：
-![](http://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2018/12/18-autohome.jpg)
+![](https://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2018/12/18-autohome.jpg)
 
 微信主要界面：
-![](http://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2018/12/19-wechat.png)
+![](https://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2018/12/19-wechat.png)
 
 
 ### 思考哪些信息是用户比较关心的？  
