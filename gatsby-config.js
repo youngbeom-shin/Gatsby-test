@@ -50,8 +50,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `MontrealPhoto.club`,
-        short_name: `MontrealPhotoClub`,
+        name: `shenyongfan.com`,
+        short_name: `shenyongfan.com`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,
@@ -70,16 +70,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: `https://montrealphoto.club`,
-        sitemap:`https://montrealphoto.club/sitemap.xml`,
-        policy: [{ userAgent: '*' }],
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: `https://montrealphoto.club`,
-        sitemap:`https://montrealphoto.club/sitemap.xml`,
+        host: `https://shenyongfan.com`,
+        sitemap:`https://shenyongfan.com/sitemap.xml`,
         policy: [{ userAgent: '*' }],
       },
     },

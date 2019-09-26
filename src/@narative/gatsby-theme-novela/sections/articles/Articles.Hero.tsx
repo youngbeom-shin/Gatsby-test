@@ -68,7 +68,7 @@ function ArticlesHero({ authors }: IAuthor) {
           <GridButton
             onClick={() => setGridLayout("rows")}
             active={!tilesIsActive}
-            data-a11y="false"
+            data-a11y="ture"
             title="Show articles in Row grid"
             aria-label="Show articles in Row grid"
           >

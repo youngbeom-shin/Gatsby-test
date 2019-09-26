@@ -43,10 +43,10 @@ const Subscription: React.FunctionComponent<{}> = () => {
       <SubscriptionContainer>
         <Content>
           <Headings.h3>
-            Join the club
+            加入邮件组
           </Headings.h3>
           <Text>
-            Make sure you don't miss any future events and announcements.
+            接收最新博客文章.
           </Text>
           <Form onSubmit={handleSubmit} hasError={error}>
             <Input
@@ -58,7 +58,7 @@ const Subscription: React.FunctionComponent<{}> = () => {
               hasError={error}
             />
             <Button
-              type="submit"
+              type="提交"
               hasError={error}
               subscribed={subscribed}
               disabled={subscribed}
