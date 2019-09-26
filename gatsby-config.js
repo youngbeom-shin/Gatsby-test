@@ -43,8 +43,8 @@ module.exports = {
     {
      resolve: 'gatsby-plugin-fathom',
      options: {
-       trackingUrl: 'jpvalery.usesfathom.com',
-       siteId: 'IOBNXYHX'
+       trackingUrl: '',
+       siteId: ''
      },
    },
     {
