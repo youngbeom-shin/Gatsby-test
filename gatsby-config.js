@@ -65,6 +65,32 @@ module.exports = {
         endpoint: "", // add your MC list endpoint here; see plugin repo for instructions
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-ZJB1QDW1MZ",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
+        // Enables Google Optimize using your container Id
+        optimizeId: "G-ZJB1QDW1MZ",
+        // Enables Google Optimize Experiment ID
+        experimentId: "G-ZJB1QDW1MZ",
+        // Set Variation ID. 0 for original 1,2,3....
+        variationId: "G-ZJB1QDW1MZ",
+        // Any additional optional fields
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: "example.com",
+      },
+    },
     'gatsby-plugin-netlify',
     'gatsby-plugin-advanced-sitemap',
     {
@@ -73,32 +99,6 @@ module.exports = {
         host: `https://shenyongfan.com`,
         sitemap:`https://shenyongfan.com/sitemap.xml`,
         policy: [{ userAgent: '*' }],
-      },
-      {
-        resolve: `gatsby-plugin-google-analytics`,
-        options: {
-          trackingId: "G-ZJB1QDW1MZ",
-          // Defines where to place the tracking script - `true` in the head and `false` in the body
-          head: false,
-          // Setting this parameter is optional
-          anonymize: true,
-          // Setting this parameter is also optional
-          respectDNT: true,
-          // Avoids sending pageview hits from custom paths
-          exclude: ["/preview/**", "/do-not-track/me/too/"],
-          // Delays sending pageview hits on route update (in milliseconds)
-          pageTransitionDelay: 0,
-          // Enables Google Optimize using your container Id
-          optimizeId: "G-ZJB1QDW1MZ",
-          // Enables Google Optimize Experiment ID
-          experimentId: "G-ZJB1QDW1MZ",
-          // Set Variation ID. 0 for original 1,2,3....
-          variationId: "G-ZJB1QDW1MZ",
-          // Any additional optional fields
-          sampleRate: 5,
-          siteSpeedSampleRate: 10,
-          cookieDomain: "example.com",
-        },
       },
     },
   ],
