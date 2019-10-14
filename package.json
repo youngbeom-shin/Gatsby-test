@@ -22,13 +22,20 @@
     "react-dom": "16.9.0"
   },
   "devDependencies": {
+    "envify": "^4.1.0",
     "eslint": "6.4.0",
     "eslint-config-gatsby-standard": "2.2.0",
     "prettier": "1.18.2",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-terser": "^5.1.2",
     "stylelint-config-prettier": "5.2.0",
     "stylelint-config-standard": "19.0.0",
     "stylelint-config-styled-components": "0.1.1",
-    "stylelint-processor-styled-components": "1.8.0"
+    "stylelint-processor-styled-components": "1.8.0",
+    "terser": "^4.3.8",
+    "terser-brunch": "^3.0.0",
+    "uglifyify": "^5.0.2"
   },
   "resolutions": {
     "gatsby": "2.15.18"
