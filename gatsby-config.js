@@ -50,8 +50,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `youngbeom的博客`,
-        short_name: `youngbeom的博客`,
+        name: `乌托邦是个理想国`,
+        short_name: `youngbeom`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,
