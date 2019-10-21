@@ -93,6 +93,15 @@ module.exports = {
     },
     'gatsby-plugin-netlify',
     {
+      resolve: `gatsby-plugin-baidu-analytics`,
+      options: {
+        // baidu analytics siteId
+        siteId: "902677b09046d7aae4cd242480d0c3b7",
+        // Put analytics script in the head instead of the body [default:false]
+        head: false,
+      },
+    },
+    {
       resolve: `gatsby-plugin-gtag`,
       options: {
         // your google analytics tracking id
