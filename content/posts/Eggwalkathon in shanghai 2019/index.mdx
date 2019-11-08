@@ -24,10 +24,13 @@ excerpt: 公益活动【一个鸡蛋的暴走】地图设计.
 前期的设计思路是花费最多时间的部分,前后大概有一个月的时间一直在探讨方案的探索和可行性,一直在调研和学习.其中有一个方案是受启发于游戏的关卡的概念,让参与到活动的志愿者能在徒步过程中像是游戏闯关一样激发心流,更加投入和激励用户完成全部的关卡.这其中每个关卡的完成和下一关卡的过渡就比较的关键,因为全部四个大卡点,所以我们希望每个关卡结束后新的路线展现不同的概念的地图,构思过包括一年四季的更迭这种变化等多种方案.
 ### 开发
 因为这次的开发是基于网页去实现,所以涉及到很多的包括适配等问题,其中因为需要在网页做动画等转场特效还调研了几个有意思的方案
-* [Lottie](https://lottiefiles.com/?page=1)  
+* [Lottie](https://lottiefiles.com/?page=1)
+
 Lottie是airbnb推出的一个动画实现方案,可以很方便的支持并应用于web、ios和安卓等系统上,也有在线预览动画效果的网页,只需要在ae里面制作好动画并渲染生成一份json文件,并将json文件给到开发同学,就能将动画在网页上渲染出来.他自身也有一个比较完整的开源动画库可以自己去下载json文件甚至ae工程文件.但它也不是支持所有类型的动画,可以查看他支持的ae属性.
-* [ae2css](https://github.com/bigxixi/ae2css)  
+* [ae2css](https://github.com/bigxixi/ae2css) 
+
 这套方案是网易云音乐的团队在实际项目中使用过的一套方案,主要原理是将ae制作的动画导出css代码,在ae里面设计好内容后只需要执行ae2css脚本就能生成一份css文件,如果有需要也可以生成标记好的精灵图出来.
+
 ### 定稿
 最终的设计和我们最初的预想有点出入,我们在前期方案上的很多内容都被砍掉了,砍掉了很多分支,只留下了主干内容.我们为不同主题设计的地图最终主办方看中了其中一套主题,这套主题也是我在稀客前期设计地图样式的时候一直优化并使用的样式.方案并没有转场的需求所以前面的提到的几个技术方案也没有用上,有点可惜,但好在也试验并了解了一些好玩的内容.  
 #### [设计输出内容-figma文件](https://www.figma.com/file/ew3L0HNNOGtLR9mXDSccFC/EggWalkathon-style-1)
@@ -37,14 +40,17 @@ Lottie是airbnb推出的一个动画实现方案,可以很方便的支持并应�
 
 
 * [底图](https://api.mapbox.com/styles/v1/youngbeom/cjtjoc0n41pxj1fqr8cq0l7od.html?fresh=true&title=true&access_token=pk.eyJ1IjoieW91bmdiZW9tIiwiYSI6ImNpc2ZxMXpvbTAxb2wzbm52cWI3d21xd3kifQ.-8V1Aipme2wTcp_9R95p7w#11.1/31.1903/121.5621)
+
 <p><iframe style="border: none;" src="https://api.mapbox.com/styles/v1/youngbeom/cjtjoc0n41pxj1fqr8cq0l7od.html?fresh=true&title=true&access_token=pk.eyJ1IjoieW91bmdiZW9tIiwiYSI6ImNpc2ZxMXpvbTAxb2wzbm52cWI3d21xd3kifQ.-8V1Aipme2wTcp_9R95p7w#11.1/31.1903/121.5621" width="100%" height="450" allowfullscreen="allowfullscreen"></iframe> </p> 
+
 这里要感谢[稀客地图](http://app.ckditu.com)提供的底图支持,专注做旅行场景的地图应用,推荐.
 
-* [图标](https://www.iconfont.cn/collections/detail?cid=18856)
+
+* [图标](https://www.iconfont.cn/collections/detail?cid=18856)  
 ![](./images/Eggwalkathon-in-shanghai-2019-3.jpeg)
 图标的设计和颜色样式上体现活泼的整体调性,icon用了filled-outline的风格,加粗描边和颜色填充使得图标更加的卡通立体.图标是直接上传到iconfont供工程师调用.
 
-* [线路](https://docs.mapbox.com/mapbox-gl-js/example/line-gradient/)
+* [线路](https://docs.mapbox.com/mapbox-gl-js/example/line-gradient/)  
 ![](./images/Eggwalkathon-in-shanghai-2019-4.png)
 设计中颜色是可以传递信息的,在这次的线路设计中也是埋下了一些“小彩蛋”.线路整体上采用白色描边加上颜色填充的设计,使得线路在底图上能更加的凸显出来,不同路段使用不同的颜色基调,整体的设计是从无彩色到有彩色,从冷色过渡到暖色的应用.寓意是希望志愿者通过这场公益活动,能让受到关爱的儿童更加感受到社会的温暖,志愿者每完成一道关卡就会使线路的颜色更加的温暖,希望参与这次活动的志愿者感受到这种从“冰冷”的到“炽热”的转变.
 
