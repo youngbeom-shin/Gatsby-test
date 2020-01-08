@@ -1,0 +1,84 @@
+---
+title: how to use auto layout in figma
+author: youngbeom
+date: 2020-01-08
+timeToRead: 5
+hero: ./images/hero.png
+excerpt: 如何使用figma的auto layout创建动态UI布局
+---
+
+# 如何使用figma的auto layout创建动态UI布局
+
+字数:1763 时长:6m13s
+
+## 前言
+在团队中推广使用figma已经半年多了,因为figma的种种特性使得团队的成员对figma高度认可,对新软件的接受度很高.半年来使用figma来设计产品已经成了日常,团队内的多个小程序项目已经都在figma上完成设计和交付开发,续费了近两年的abstract也取消了续费.  
+这篇文章主要是针对日本地铁交通功能在设计中做的一些总结,在此次的设计中会有非常多的字段在不同的组件中,对整个页面的布局排列和调整是个很有趣的尝试和挑战,因为有了figma的auto layout特性,让此次的设计过程变得效率更高.
+
+## 什么是auto layout?  
+aotu layout是figma支持的一种特性,它支持设计师可以根据内容创建动态布局.你可以用它来创建根据内容进行自适应的按钮、快速创建动态列表、在现有的component中设置auto layout.  
+auto layout是一种非常强大的一种特性,可以说是它拯救了无数的设计师,让他们避免陷入重复的繁琐的适配工作中.  
+
+## 如何创建auto layout  
+<p>
+<iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FMN6kgpQ8jPCznpSLcaC2jb%2FUntitled%3Fnode-id%3D0%253A1" allowfullscreen>
+</iframe>
+</p>  
+
+以这个项目为例子我们看一下auto layout是如何帮助我更快的设计主要的几个页面,项目里面只是将其中的几个主要界面作为展示,不涉及完整的交互流程和Conner case的页面.  
+![](http://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2020/01/how-to-creat-auto-layout.png)
+在figma中创建auto layout有3种路径  
+**1. **左侧工具栏 **object**-**add auto layout**  
+**2. **单机鼠标右键 **add auto layout**  
+**3. **右侧属性栏 选中组或者画布后点击 **add auto layout**  
+**4. **利用快捷键 **shift + A**   
+![](http://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2020/01/frame_vs_autolayout.gif)
+可以通过对比可以看到auto layout的特性
+
+## auto layout的属性
+![](http://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2020/01/properties-of-auto-layout.png)
+在属性面板中auto layout有多种可设置的属性,按照阅读顺序依次是
+* 水平和垂直
+* 自动高度/宽度
+* 固定高度
+* 水平填充
+* 垂直填充
+* 元素间隔  
+
+我们分别来看一下他们都会影响什么内容  
+![](http://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2020/01/Horozontal&Vertical.png)
+**水平/垂直**:他们会影响多元素布局auto layout的排列.但是对单元素的auto layout没有影响,对于宽度不同的多元素垂直布局以后的对齐可以选择单个元素后进行align left/center/right操作,并且可以move up/down.  
+![](http://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2020/01/Fixed%20hight&Auto%20hight.png)
+**自动高度/宽度**:水平布局的时候会出现自动/限定高度,垂直布局时会出现自动/限定高度.图示的模块是在单个元素auto layout时限定高度和自动高度的变化,单个元素内的文字可以选择向上/居中/向下对齐.
+![](http://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2020/01/Auto_Layout_Fixed_width.png)
+这个特性举例来讲,应用在实际的UI界面中时可应用在列表的纵向布局时可以将整个auto layout的宽度固定在border之内,这样当某一元素的宽度大于页面宽度时还能保证跟整个页面还有一定的距离,保证了页面的完整性.  
+![](http://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2020/01/Resizing_Grow_Vertically.png)
+如果这条信息是必须展示完整的信息则可以将这个单个元素内的文字调整Resizing为Grow Vertically,那么不管文字是一行还是多行都会在这个元素宽度内向下扩展.
+
+
+**水平/垂直填充 和 元素间隔**  
+![](http://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2020/01/Horizontal_padding-4_Verticalpadding-2_Spacing_Between_Items-10.png)
+上图为单元素布局例如按钮或者标签,在这种情况下上下填充为按钮垂直和水平方向各留出4px和2px的空间,但是因为是单元素所以元素间隔在这里并不体现.
+
+![](http://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2020/01/Horizontal_padding-10_Verticalpadding-10_Spacing_Between_Items-20.png)
+页面中多元素auto layout布局时,单元素内的布局设定依然生效,且整个auto layout的设定会以每个元素为基本元素再次遵循我们的填充设定,垂直/水平各为10,并且元素之间的间隔20也会生效.不论我们更改该布局为水平还是垂直方向都会依据我们的设定进行适配.
+
+## 增加或删减元素
+我们有的时候会因为设计需求的改变会增删一些展示的字段,比如API无法返回的数据类型或者数据库中暂时缺少的字段,这种情况都会影响页面的元素布局.这样的时候其实在figma中也有几种比较好的方法去完成.
+
+![](http://youngbeom-cloud.oss-cn-shanghai.aliyuncs.com/blog/assets/2020/01/add&delete-auto-layout.gif)
+**增加**:增加其实是比较好实现的,只要到设定auto layou的frame内进行复制粘贴同类元素就可以,或者制作好单元素frame后粘贴进去.任何放入auto layou frame的元素不论是组、文字、icon或者图片都会遵循预先设定好的规则.  
+**删减**:删减其实有两种方法,一种是找到元素直接删除,另一种是点击隐藏,对于暂时做的调整建议是作为隐藏,以便后续再重复使用.
+如果不想影响其他元素的布局,只是想删掉或者隐藏掉其中一个元素的方法是将其中一个元素的透明度将为0.
+
+## 取消auto layout
+取消autolayout的方法有两种
+* 选中元素后,单击鼠标右键选择Rmove Auto Layout
+* 选中元素后,在右侧属性面板点击Auto Layout右侧的“-”
+
+## 写在最后
+发现figma赋予auto layout赋予的能力后,在后续的工作总会经常性的使用到这项功能,做成组建后甚至可以达到“一劳永逸”的效果.最近的工作是专注的做小程序,现在手里的任务是多项小程序项目并行的状态,所以节省设计开发时间提高效率是非常必要的事情.    
+
+因为团队现有的小程序项目都是自己设计开发,并没有用外部的框架和组件,现在为了避免每个小程序重复的写组件,所以把可复用的一些组件的UI和交互都写成component.  
+
+其实作为设计师还是会面临一些其他问题,比如多个不同的小程序其实面向的用户、实现的功能、解决的痛点都不同,但是如何在保证可复用的情况下对每个小程序都赋予不同的调性是一个需要思考的问题.
